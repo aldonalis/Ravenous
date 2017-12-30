@@ -15,6 +15,7 @@ const Yelp = {
             return jsonResponse.businesses.map(business => ({
                 id: business.id,
                 imageSrc: business.image_url,
+                url: business.url,
                 name: business.name,
                 address: business.location.address1,
                 city: business.location.city,
@@ -22,7 +23,8 @@ const Yelp = {
                 zipCode: business.location.zip_code,
                 category: business.categories[0].title,
                 rating: business.rating,
-                reviewCount: business.review_count
+                reviewCount: business.review_count,
+                distance: business.distance
             }));
           }
         })

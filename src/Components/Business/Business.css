@@ -20,19 +20,35 @@
 .Business-information {
   display: flex;
   justify-content: space-between;
+    text-decoration: none;
 }
 
 .Business-information p {
   font-size: .88rem;
   font-weight: 300;
   line-height: 1rem;
+  text-decoration: none;
 }
 
-.Business-address {
+.Business-address a:visited,
+.Business-address a:link,
+.Business-address p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-decoration: none;
+  color: black;
 }
+
+.Business-address a:hover,
+.Business-address a:active {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: underline;
+  color: black;
+}
+
 
 .Business-reviews {
   display: flex;
